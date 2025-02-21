@@ -1,0 +1,152 @@
+[
+    {
+      "Name": "Seed Bombing",
+      "Description": "A simple, cost-effective way to plant more trees per click.",
+      "Changes": {
+        "treePerClick": 2,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 50
+    },
+    {
+      "Name": "Improved Tree Nursery",
+      "Description": "More efficient seedling production leads to slightly higher returns.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 1.5,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 100
+    },
+    {
+      "Name": "Manual Watering System",
+      "Description": "Basic irrigation allows for a small amount of passive tree growth.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 1.1
+      },
+      "Cost": 250
+    },
+    {
+      "Name": "Mycorrhizal Network Expansion",
+      "Description": "Utilizing fungal networks to connect trees and increase their growth.",
+      "Changes": {
+        "treePerClick": 3,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 500
+    },
+    {
+      "Name": "Precision Planting",
+      "Description": "Optimized planting techniques maximize survival rates and wood quality.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 2,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 1000
+    },
+    {
+      "Name": "Solar-Powered Irrigation",
+      "Description": "Sustainable irrigation boosts passive growth.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 1.5
+      },
+      "Cost": 2500
+    },
+    {
+      "Name": "Drone Seeding",
+      "Description": "Drones allow for rapid reforestation of large areas.",
+      "Changes": {
+        "treePerClick": 6,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 5000
+    },
+    {
+      "Name": "Biofertilizers",
+      "Description": "Natural fertilizers enhance tree growth and carbon sequestration.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 3,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 10000
+    },
+    {
+      "Name": "Automated Tree Harvester (for replanting)",
+      "Description": "Robotics speed up the entire process, including replanting after harvesting.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 2
+      },
+      "Cost": 25000
+    },
+    {
+      "Name": "Genetic Tree Improvement",
+      "Description": "Developing tree varieties that grow faster and are more resilient.",
+      "Changes": {
+        "treePerClick": 11,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 50000
+    },
+    {
+      "Name": "Carbon Capture Technology (applied to processing)",
+      "Description": "Capturing and selling carbon credits, making tree planting even more profitable.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 6,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 100000
+    },
+    {
+      "Name": "Atmospheric Moisture Harvesters",
+      "Description": "Pulling water from the air to irrigate even arid regions.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 3
+      },
+      "Cost": 250000
+    },
+    {
+      "Name": "Ecosystem Restoration Projects",
+      "Description": "Large-scale efforts to revitalize damaged ecosystems.",
+      "Changes": {
+        "treePerClick": 21,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 500000
+    },
+    {
+      "Name": "Global Tree Mapping and Monitoring System",
+      "Description": "Advanced technology for tracking forest health and carbon sequestration.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 11,
+        "afkTreePerSecond": 1
+      },
+      "Cost": 1000000
+    },
+    {
+      "Name": "Climate Engineering Research (Save the planet)",
+      "Description": "Investing in the final research needed to reverse climate change.",
+      "Changes": {
+        "treePerClick": 1,
+        "moneyPerTree": 1,
+        "afkTreePerSecond": 6
+      },
+      "Cost": 2500000
+    }
+  ]
