@@ -32,13 +32,12 @@
             <div class="h-full bg-[url('https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/forest.jpg')] bg-fill bg-center bg-no-repeat rounded-2xl shadow-lg flex flex-col items-center justify-between" id="game-background">
                 <div class="flex-1 flex flex-col items-center justify-center space-y-16">
                     <h1 class="text-4xl font-bold text-white uppercase text-center drop-shadow-lg mt-8">Plant a tree !</h1>
-                    <button id="plant-button" class="uppercase bg-green-500 hover:bg-green-600 active:bg-green-700 transform active:scale-95 transition-all text-white text-4xl font-bold py-8 px-16 rounded-2xl shadow-lg">
-                        Plant
-                    </button>
-                </div>
-                <div class="bg-white px-6 py-2 rounded-full shadow-md mb-8">
-                    <span class="text-gray-600 text-sm">Trees per second:</span>
-                    <span class="font-bold text-green-600 text-lg ml-2">0</span>
+                    <img 
+                        id="plant-button" 
+                        src="https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/tree-icon.png" 
+                        alt="Plant Tree" 
+                        class="w-32 h-32 cursor-pointer transform hover:scale-105 active:scale-95 transition-all duration-200 drop-shadow-xl"
+                    >
                 </div>
             </div>
         </div>
@@ -61,5 +60,8 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <a href="about.html" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg transition-colors">
+        Help
+    </a>
 </body>
 </html> 
