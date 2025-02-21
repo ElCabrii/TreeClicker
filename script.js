@@ -1,4 +1,4 @@
-let currentForestImage = 'https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/forest.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA';
+let currentForestImage = 'https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/forest.jpg';
 
 function reduceYears() {
     let yearsRemaining = parseInt(yearCounter.textContent);
