@@ -29,7 +29,7 @@
 
         <!-- Main Game Area -->
         <div class="flex-1 p-4">
-            <div class="h-full bg-[url('https://media-hosting.imagekit.io//bbb3d79334e94139/forest.jpeg?Expires=1834748234&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=t4eyJZnTEzyNaro2VM8P8aDQO7LZYIOxH3oFPj2CZacPpP5QlJSATyDmjWHm5z59Kqbx56EsF944WB0T2o1qwn2bEzOAlw6yMnw3HaRSxX4~g-8euMkJXNo5qWr4p-M9X4WZ4fU8YWrO3UG8geLP7nkug0UazM8KeF0MIYZpc2rba~xP33iwZXf-WzwJxWlBOWDvfZZ3dKBzPm6bqdm4weccou2A1a6cSYRNp1r82fP8ck~TxS-xZS3uak1pidR2L52a7EscT7T-lTgoahKQ4aTcSQwMG1waP4RBPV0WwA30RWNQ3sQOU2whG9IQjkKgZiOs3wbhTeAS~prOtV46rQ__')] bg-fill bg-center bg-no-repeat rounded-2xl shadow-lg flex flex-col items-center justify-between">
+            <div class="h-full bg-[url('forest.jpeg')] bg-fill bg-center bg-no-repeat rounded-2xl shadow-lg flex flex-col items-center justify-between">
                 <div class="flex-1 flex flex-col items-center justify-center space-y-16">
                     <h1 class="text-4xl font-bold text-white uppercase text-center drop-shadow-lg mt-8">Plant a tree !</h1>
                     <button id="plant-button" class="uppercase bg-green-500 hover:bg-green-600 active:bg-green-700 transform active:scale-95 transition-all text-white text-4xl font-bold py-8 px-16 rounded-2xl shadow-lg">
@@ -47,14 +47,9 @@
     <!-- Right Panel (25%) -->
     <div class="w-1/4 h-screen bg-white shadow-lg flex flex-col">
         <!-- Innovations List -->
-        <div class="flex-1 p-4 overflow-y-auto">
+        <div class="flex-1 p-4 overflow-y-auto" id="innovations-list">
             <h2 class="text-xl font-bold text-green-800 mb-4">Innovations</h2>
-            <div class="space-y-4">
-                <div class="p-3 border rounded-lg hover:bg-green-50 cursor-pointer">
-                    <h3 class="font-semibold">Basic Tree</h3>
-                    <p class="text-sm text-gray-600">Cost: $10</p>
-                </div>
-            </div>
+            <div class="space-y-4"><!-- The new innovations spawn here --></div>
         </div>
 
         <!-- History Panel -->
