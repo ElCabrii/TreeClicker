@@ -11,6 +11,32 @@ const treesCounter = document.getElementById('trees-counter');
 const moneyCounter = document.getElementById('money-counter');
 const yearCounter = document.getElementById('years-counter');
 const idleCounter = document.getElementById('trees-per-second');
+let statsContainer = null;
+
+function initializeStatsContainer() {
+    const container = document.createElement('div');
+    container.className = 'bg-white px-6 py-2 rounded-full shadow-md mb-8';
+    container.innerHTML = `
+        <div class="flex items-center space-x-6">
+            <div class="flex items-center">
+                <span class="text-gray-600 text-sm">Trees/click:</span>
+                <span class="font-bold text-green-600 text-lg ml-2" data-stat="trees-per-click">1.0</span>
+            </div>
+            <div class="flex items-center">
+                <span class="text-gray-600 text-sm">$/tree:</span>
+                <span class="font-bold text-green-600 text-lg ml-2" data-stat="money-per-tree">1.0</span>
+            </div>
+            <div class="flex items-center">
+                <span class="text-gray-600 text-sm">Idle:</span>
+                <span class="font-bold text-green-600 text-lg ml-2" id="trees-per-second">0.0</span>
+            </div>
+        </div>
+    `;
+    
+    const gameBackground = document.getElementById('game-background');
+    gameBackground.appendChild(container);
+    statsContainer = container;
+}
 
 function reduceYears() {
     let yearsRemaining = parseInt(yearCounter.textContent);
@@ -183,26 +209,18 @@ function moveInnovationToHistory(innovation) {
 }
 
 function updateMultiplierDisplay() {
-    const statContainer = document.querySelector(".bg-white.px-6.py-2.rounded-full");
-    statContainer.innerHTML = `
-        <div class="flex items-center space-x-6">
-            <div class="flex items-center">
-                <span class="text-gray-600 text-sm">Trees/click:</span>
-                <span class="font-bold text-green-600 text-lg ml-2">${treePerClick.toFixed(1)}</span>
-            </div>
-            <div class="flex items-center">
-                <span class="text-gray-600 text-sm">$/tree:</span>
-                <span class="font-bold text-green-600 text-lg ml-2">${moneyPerTree.toFixed(1)}</span>
-            </div>
-            <div class="flex items-center">
-                <span class="text-gray-600 text-sm">Idle :</span>
-                <span class="font-bold text-green-600 text-lg ml-2" id="trees-per-second">${afkTreePerSecond.toFixed(1)}</span>
-            </div>
-        </div>
-    `;
-    treesPerSecondCounter = document.getElementById('trees-per-second');
+    if (!statsContainer) return;
+    
+    const treesPerClickStat = statsContainer.querySelector('[data-stat="trees-per-click"]');
+    const moneyPerTreeStat = statsContainer.querySelector('[data-stat="money-per-tree"]');
+    const treesPerSecondStat = statsContainer.querySelector('#trees-per-second');
+
+    if (treesPerClickStat) treesPerClickStat.textContent = treePerClick.toFixed(1);
+    if (moneyPerTreeStat) moneyPerTreeStat.textContent = moneyPerTree.toFixed(1);
+    if (treesPerSecondStat) treesPerSecondStat.textContent = afkTreePerSecond.toFixed(1);
 }
 
+// Remove the idleCounter constant since we'll get it dynamically when needed
 function manageAfk() {
     if (window.afkInterval) clearInterval(window.afkInterval);
     
@@ -226,9 +244,10 @@ function manageAfk() {
     }
 }
 
-// Event Listeners
+// Update the DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', () => {
     reduceYears();
+    initializeStatsContainer();
     parseJson()
         .then(data => {
             parsedJson = data;
@@ -240,6 +259,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 plantButton.addEventListener('click', () => {
-    increaseTreeCount();
-    increaseMoney();
+    if (!gameEnded) {
+        increaseTreeCount();
+        increaseMoney();
+    }
 });
