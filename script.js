@@ -1,3 +1,5 @@
+let currentForestImage = 'https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/forest.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA';
+
 function reduceYears() {
     let yearsRemaining = parseInt(yearCounter.textContent);
 
@@ -112,27 +114,36 @@ function showInnovations() {
 }
 
 function buyInnovation(innovation) {
-    // Récupérer l'argent actuel du joueur
     const currentMoney = parseInt(moneyCounter.textContent.substring(1));
 
-    // Vérifier si le joueur a assez d'argent pour acheter l'innovation
     if (currentMoney >= innovation.Cost) {
-        // Soustraire le coût de l'innovation de l'argent du joueur
         moneyCounter.textContent = `$${currentMoney - innovation.Cost}`;
-
-        // Appliquer les changements de l'innovation
         applyInnovation(innovation);
-
-        // Déplacer l'innovation dans l'historique
         moveInnovationToHistory(innovation);
+
+        // Update background image if one is specified
+        if (innovation.Image) {
+            updateBackgroundImage(innovation.Image);
+        }
 
         console.log(`Innovation "${innovation.Name}" achetée!`);
     } else {
         console.log(`Pas assez d'argent pour acheter "${innovation.Name}"!`);
-        // Optionnel : ajouter une notification visuelle pour l'utilisateur
         alert(`Vous n'avez pas assez d'argent pour acheter "${innovation.Name}". Il vous manque $${innovation.Cost - currentMoney}.`);
     }
 }
+
+function updateBackgroundImage(newImage) {
+    const gameBackground = document.getElementById('game-background');
+    if (gameBackground) {
+        currentForestImage = newImage;
+        gameBackground.style.backgroundImage = `url('${newImage}')`;
+        
+        // Save the current image in game state
+        saveGameState();
+    }
+}
+
 
 function applyInnovation(innovation) {
     // Appliquer les modifications aux multiplicateurs du jeu
@@ -308,7 +319,8 @@ function saveGameState() {
         afkTreePerSecond: afkTreePerSecond,
         afkAccumulated: afkAccumulated,
         lastSaved: Date.now(),
-        boughtInnovations: []
+        boughtInnovations: [],
+        currentForestImage: currentForestImage
     };
 
     // Stocker les noms des innovations qui ont été achetées
@@ -367,6 +379,10 @@ function loadGameState() {
                     alert(`Pendant votre absence (${formatTime(timeDifference)}), vos arbres ont continué à pousser !\n\nVous avez gagné :\n- ${treesGenerated} arbres\n- $${moneyGenerated}`);
                 }, 1000);
             }
+        }
+
+        if (gameState.currentForestImage) {
+            updateBackgroundImage(gameState.currentForestImage);
         }
 
         return true;

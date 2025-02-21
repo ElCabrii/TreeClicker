@@ -2,6 +2,7 @@
     {
       "Name": "Seed Bombing",
       "Description": "A simple, cost-effective way to plant more trees per click.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/seed_bombing.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 2,
         "moneyPerTree": 1,
@@ -12,6 +13,7 @@
     {
       "Name": "Improved Tree Nursery",
       "Description": "More efficient seedling production leads to slightly higher returns.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/improved_tree_nursery.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 1.5,
@@ -22,6 +24,7 @@
     {
       "Name": "Manual Watering System",
       "Description": "Basic irrigation allows for a small amount of passive tree growth.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/manual_watering_system.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 1,
@@ -32,6 +35,7 @@
     {
       "Name": "Mycorrhizal Network Expansion",
       "Description": "Utilizing fungal networks to connect trees and increase their growth.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/mycorrhizal_network_expansion.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 3,
         "moneyPerTree": 1,
@@ -42,6 +46,7 @@
     {
       "Name": "Precision Planting",
       "Description": "Optimized planting techniques maximize survival rates and wood quality.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/precision_planting.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 2,
@@ -52,6 +57,7 @@
     {
       "Name": "Solar-Powered Irrigation",
       "Description": "Sustainable irrigation boosts passive growth.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/solar-powered_irrigation.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 1,
@@ -62,6 +68,7 @@
     {
       "Name": "Drone Seeding",
       "Description": "Drones allow for rapid reforestation of large areas.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/drone_seeding.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 6,
         "moneyPerTree": 1,
@@ -72,6 +79,7 @@
     {
       "Name": "Biofertilizers",
       "Description": "Natural fertilizers enhance tree growth and carbon sequestration.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/biofertilizers.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 3,
@@ -82,6 +90,7 @@
     {
       "Name": "Automated Tree Harvester (for replanting)",
       "Description": "Robotics speed up the entire process, including replanting after harvesting.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/automated_tree_harvester.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 1,
@@ -92,6 +101,7 @@
     {
       "Name": "Genetic Tree Improvement",
       "Description": "Developing tree varieties that grow faster and are more resilient.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/genetic_tree_improvement.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 11,
         "moneyPerTree": 1,
@@ -102,6 +112,7 @@
     {
       "Name": "Carbon Capture Technology (applied to processing)",
       "Description": "Capturing and selling carbon credits, making tree planting even more profitable.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/carbon_capture_technology.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 6,
@@ -112,6 +123,7 @@
     {
       "Name": "Atmospheric Moisture Harvesters",
       "Description": "Pulling water from the air to irrigate even arid regions.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/atmospheric_moisture_harversters.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 1,
@@ -122,6 +134,7 @@
     {
       "Name": "Ecosystem Restoration Projects",
       "Description": "Large-scale efforts to revitalize damaged ecosystems.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/ecosystem_restoration_projects.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 21,
         "moneyPerTree": 1,
@@ -132,6 +145,7 @@
     {
       "Name": "Global Tree Mapping and Monitoring System",
       "Description": "Advanced technology for tracking forest health and carbon sequestration.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/global_tree_mapping_and_monitoring_system.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 11,
@@ -142,6 +156,7 @@
     {
       "Name": "Climate Engineering Research (Save the planet)",
       "Description": "Investing in the final research needed to reverse climate change.",
+      "Image": "https://raw.githubusercontent.com/ElCabrii/TreeClicker/refs/heads/main/assets/images/climate_engineering_research.jpg?token=GHSAT0AAAAAAC7J2LRGBZVYO6K54EPIA3C6Z5YSQGA",
       "Changes": {
         "treePerClick": 1,
         "moneyPerTree": 1,
